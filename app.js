@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const indexRouter = require('../../bday/bday/routes/api/index');
 const usersRouter = require('../../bday/bday/routes/api/v1/users');
-const apiCoinsRouter = require('../../bday/bday/routes/api/v1/coins');
+
 
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
@@ -32,7 +32,7 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/coins', apiCoinsRouter);
+
 
 
 // catch 404 and forward to error handler
