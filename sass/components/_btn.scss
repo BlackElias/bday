@@ -1,0 +1,114 @@
+$text-font:  'Amiko', sans-serif;
+$background-color: linear-gradient(360deg, rgba(48,51,58,1) 0%, rgba(57,62,68,1) 100%);
+$hover: linear-gradient(180deg, rgba(#F73311, 100%), rgba(#B03A25, 100%) );
+
+.btn{
+    font-family: $text-font;
+    background: $background-color;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 150px;
+    font-size: 15px;
+
+    &:hover{
+        background:$hover;
+    }
+}
+
+
+.btn__previous{
+    font-family: $text-font;
+    background: $background-color;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    &:hover{
+        background: $hover;
+    }
+   
+}
+.btn__login{
+    font-family: $text-font;
+    background: $hover;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+  
+    min-width: 100%;
+
+    &:hover{
+        background: $background-color;
+    }
+}
+
+
+.btn__cancel, .btn__send{
+    border: none;
+    border-radius: 10px;
+    min-width: 17%;
+    height: 40px;
+    margin-left: 10px;
+    color: white;
+}
+
+.btn__cancel{
+    background: $background-color;
+    &:hover{
+        background: $hover;
+    }
+}
+
+.btn__send{
+    background: $hover;
+    &:hover{
+        background: $background-color;
+    }
+}
+@media  screen and (min-width: 768px) {
+
+    .btn{
+        font-family: $text-font;
+        background: $background-color;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 50px;
+    }  
+  
+}
+@media  screen and (min-width: 1024px) {
+    .btn{
+        font-family: $text-font;
+        background: $background-color;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 20px;
+        width: 200px;
+        font-size: 20px;
+        display: inline-block;
+
+         margin-top: 150%;
+     }
+}
+@media  screen and (min-width: 1280px) {
+    .btn{
+        font-family: $text-font;
+        background: $background-color;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 20px;
+    
+        margin-top: 100%;
+     }
+}

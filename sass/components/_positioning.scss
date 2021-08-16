@@ -1,0 +1,267 @@
+$background-color: linear-gradient(360deg, rgba(48,51,58,1) 0%, rgba(57,62,68,1) 100%);
+$red: linear-gradient(180deg, rgba(#F73311, 100%), rgba(#B03A25, 100%) );
+$yellow: linear-gradient(180deg, rgba(#FEBD16, 100%,), rgba(#FF7A00, 100%) );
+
+
+body{
+overflow-y: hidden;    
+}
+
+.wrapper {
+    
+  
+    max-width: 960px; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+  }
+.w-25{
+width: 25%;
+}
+.w-50{
+    width: 50%;
+}
+.w-75{
+    width: 75%; 
+}
+.w-100{
+    width: 100%;
+}
+.hb-25{
+    margin-bottom: 5%;
+}
+.hb-50{
+    margin-bottom: 10%;
+}
+.hb-75{
+    margin-bottom: 15%;
+}
+.hb-100{
+    margin-bottom: 20%;
+}
+.h-25{
+    margin-top: 5%;
+}
+.h-50{
+    margin-top: 10%;
+}
+.h-75{
+    margin-top: 25%;
+}
+.h-100{
+    margin-top: -10%;
+    height: 700px;
+}
+
+.logo-position{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60%;
+}
+
+.block__balance{
+    width: 500px;
+    height: 80px;
+    border-radius: 20px;
+    background: $background-color;
+}
+
+.img__balance{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: $red;
+    float: left;
+}
+
+.img__balance img{
+    width: 60px;
+    display: block;
+    padding: 13px;
+}
+
+.balance__count{
+    text-align: center;
+}
+
+.latest__transactions{
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    background:$background-color;
+}
+
+.navigation nav{
+    background: $background-color;
+    border-radius: 20px;
+    width: 350px;
+    height: 60px;
+    margin-top: 50px;
+    text-align: center;
+
+    li{
+        list-style: none;
+        display: block;
+        width: 100%;
+
+        a{
+            text-decoration: none;
+            display: block;
+            padding-left: 30px;
+            padding-top: 20px;
+            width: 50px;
+            float: left;
+
+        }
+    }
+}
+
+.img__transaction{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: $red;
+    float: right;
+}
+
+.img__transaction a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.load_more{
+    width: 80px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: $background-color;
+    border-radius: 20px;
+    &:hover{
+        background: $red;
+    }
+}
+
+.previous_transaction{
+    background: $background-color;
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#leaderboard{
+    background:$yellow;
+}
+
+@media  screen and (max-width: 415px) {
+   .center{
+        max-width: 10rem;
+        margin: auto;
+      
+        
+   }
+   .left{
+        max-width: 18rem;
+    
+   }
+   .right{
+        max-width: 3rem;
+    
+   }
+   .flex{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+   }
+  .logo-position{
+        margin-top: 60%;
+    } 
+   
+}
+
+
+
+
+@media  screen and (min-width: 768px) {
+
+    
+    .center{
+        max-width: 16rem;
+        margin: auto;
+          
+            
+       }
+       .flex{
+        display: flex;
+       justify-content: center;
+        flex-direction: column;
+    }
+    .wrapper {
+    
+  
+        max-width: 960px; /* 2 */
+      
+        padding-right: 100px; /* 3 */
+        padding-left:  100px; /* 3 */
+      }
+
+    .logo-position{
+        margin-top: 20%;
+    }
+
+}
+
+
+
+
+@media  screen and (min-width: 1024px) {
+    .center{
+        max-width: 19rem;
+        margin: auto;
+        margin-top: -35%;
+            
+       }
+       .wrapper {
+    
+  
+        max-width: 960px; /* 2 */
+      
+        padding-right: 200px; /* 3 */
+        padding-left:  170px; /* 3 */
+      }
+      .h-100{
+        margin-top: 35%;
+    }
+      .logo-position{
+        margin-top: 10%;
+    }
+    
+}
+@media  screen and (min-width: 1280px) {
+    .center{
+        max-width: 16rem;
+        margin: auto;
+        margin-top: -35%;
+            
+       }
+       .wrapper {
+    
+  
+        max-width: 960px; /* 2 */
+      
+        padding-right: 200px; /* 3 */
+        padding-left:  360px; /* 3 */
+      }
+
+
+
+
+    
+}

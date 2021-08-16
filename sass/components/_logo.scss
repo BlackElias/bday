@@ -1,0 +1,29 @@
+//Logo - "Welcome..."
+.logo-img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media  screen and (min-width: 768px) {
+
+    .logo-img{
+
+        float: left;
+
+    }
+
+}
+@media  screen and (min-width: 1024px) {
+   /* .logo-img{
+
+
+    }
+    */
+}
+@media  screen and (min-width: 1280px) {
+
+    
+}

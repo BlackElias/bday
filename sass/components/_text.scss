@@ -1,0 +1,174 @@
+$title-font:  'Righteous', cursive;
+$text-font: 'Roboto', cursive;
+$text-color: #BEBEBE;
+$input-color: rgba(0, 0, 0, 0.233);
+
+.title{
+    font-family: $title-font;
+    color: white;
+}
+.small{
+font-size: 1rem;
+}
+.normal{
+    font-size: 1.5rem;  
+}
+.large{
+    font-size: 2rem;
+}
+.x-large{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 130px;
+}
+.text{
+    font-family: $text-font;
+    color: $text-color;
+}
+.align-center{
+    text-align: center;
+}
+.text-signup{
+    font-family: $text-font;
+    color: red;
+    &:hover{
+        color: white;
+    }
+}
+.subtext{
+    text-align: center;
+}
+
+.text-label{
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 20px;
+}
+.input-login{
+    height: 40px;
+    background-color: $input-color;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: white;
+    font-family: $text-font;
+
+    &:hover{
+        background-color: rgba(80, 80, 80, 0.151);
+    }
+}
+
+.latest__transactions li{
+    font-family: $text-font;
+    font-size: 20px;
+    list-style: none;
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.new_transaction{
+    font-family: $text-font;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 10px;
+    float: left;
+    margin-left: 50px;
+    color: white;
+}
+
+.previous_transactions{
+    font-family: $text-font;
+    font-size: 20px;
+    list-style: none;
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.load_more h1{
+    text-align: center;
+    margin-top: -5px;
+}
+.load_more a{
+    text-decoration: none;
+}
+
+.amount{
+    color: red;
+    font-weight: bold;
+}
+
+.curro{
+    color: grey;
+   // text-align: center;
+    font-family: $title-font;
+    margin-top: -50px;
+}
+
+.input-curro{
+    background: none;
+    border: none;
+    //text-align: center;
+    display: block;
+  //  margin-left: auto;
+  //  margin-right: auto;
+    font-size: 50px;
+
+}
+
+@media  screen and (min-width: 768px) {
+
+    .x-large{
+        font-size: 5rem;
+        
+    }
+    .small{
+        font-size: 1.5rem;
+     }
+    .text{
+        font-family: $text-font;
+        color: $text-color;
+        font-size: 1.5rem;
+    }
+
+}
+@media  screen and (min-width: 1024px) {
+    .x-large{
+        font-size: 5rem;
+        
+    }
+    .small{
+        font-size: 1.5rem;
+     }
+    .text{
+        font-family: $text-font;
+        color: $text-color;
+        font-size: 1.8rem;
+    }
+    .align-center{
+        text-align: center;
+        
+    }
+    
+}
+@media  screen and (min-width: 1280px) {
+    .x-large{
+        font-size: 5rem;
+        padding-top: 10px;       
+    }
+
+    .small{
+        font-size: 1.5rem;
+     }
+    .text{
+        font-family: $text-font;
+        color: $text-color;
+        font-size: 1.8rem;
+    }
+    .align-center{
+        text-align: center;
+        
+    }
+    
+}
