@@ -4,10 +4,12 @@ const jwt = require('jsonwebtoken');
 
 const signup = async (req, res, next) =>{
    let username = req.body.username; 
-   let password = req.body.password; 
+   let password = req.body.password;
+    
 
     const user = new User({username: username});
     await user.setPassword(password);
+    
     await user.save().then(result =>{
         res.json({
             "status": "succes",
@@ -19,7 +21,7 @@ const signup = async (req, res, next) =>{
     })
 };
 const login = async (req, res, next) => {
-    const user = await User.authenticate()(req.body.username, req.body.password).then(result => {
+    const user = await User.authenticate()(req.body.username, req.body.password, req.body.birthday).then(result => {
         res.json({
             "status": "success",
             "data": {

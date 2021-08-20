@@ -15,7 +15,7 @@ var btnSignup = document.guerySelector("#btn-login").addEventListener("click", f
           if (json.status === "success"){  
          let token = json.data.token;
          localStorage.setItem("token", token);
-         window.location.href = "app.html";// app pagina 
+         window.location.href = "home.html";// app pagina 
           } else {
             let feedback = document.querySelector(".alert"); 
             feedback.textContent = "login failed"; 
