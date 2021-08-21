@@ -26,3 +26,4 @@ fetch('http://localhost:3000/signup', {
       }
       })
       }); 
+      var primus = new Primus("https://localhost:3000", {  });;
