@@ -6,6 +6,7 @@ passport.use(User.createStrategy());
 //user to string or readed out of session
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
+
 //webtokens JWT
 var JwtStrategy = require('passport-jwt').Strategy,
     ExtractJwt = require('passport-jwt').ExtractJwt;

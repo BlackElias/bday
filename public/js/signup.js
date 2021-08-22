@@ -21,7 +21,7 @@ fetch('http://localhost:3000/signup', {
      feedback.classList.remove('hidden'); 
      let token = json.data.token;
      localStorage.setItem("token", token);
-    
+     window.location.href = "home.html";// app pagina 
      
       }
       })

@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const indexRouter = require('../../bday/bday/routes/api/index');
 const usersRouter = require('../../bday/bday/routes/api/v1/users');
-
+//const apiChat = require('../../bday/bday/routes/api/v1/chat');
 
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
@@ -36,7 +36,7 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+ //app.use('/api/v1/chat', apiChat );
 
 
 // catch 404 and forward to error handler
