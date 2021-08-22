@@ -5,15 +5,15 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 
-const indexRouter = require('../../bday/bday/routes/api/index');
-const usersRouter = require('../../bday/bday/routes/api/v1/users');
+const indexRouter = require('./routes/api/index');
+const usersRouter = require('./routes/api/v1/users');
 //const apiChat = require('../../bday/bday/routes/api/v1/chat');
 
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://localhost:27017/bday',
 {useNewUrlParser: true, useUnifiedTopology: true});
-const passport =require('../../bday/bday/passport/passport');
+const passport =require('./passport/passport');
 mongoose.set('useCreateIndex', true);
 
 var app = express();
@@ -21,11 +21,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
