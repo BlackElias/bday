@@ -3,7 +3,7 @@ let password = document.querySelector('#password').value;
 let username = document.querySelector('#username').value; 
 let birthday = document.querySelector('#birthday').value;  
 console.log("click");
-fetch('http://localhost:3000/signup', {
+fetch('http://localhost:3000/users/signup', {
      method: "post",
       headers: { 'Content-Type': 'application/json'
 }, 
@@ -26,4 +26,4 @@ fetch('http://localhost:3000/signup', {
       }
       })
       }); 
-      var primus = new Primus("https://localhost:3000", {  });;
+     

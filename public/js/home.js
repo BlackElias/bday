@@ -24,12 +24,50 @@ primus.on('data', (json) => {
 let appendMessage = (json) => {
     let bericht = `<div class="message">
                     
-                    <div class="todo__text">${json.data.todo.text}</div>
+                    <div class="messsage__text">${json.data.todo.text}</div>
                     
                 </div>`;
-    document.querySelector(".todo__new ").insertAdjacentHTML('afterend', bericht);
+    document.querySelector("#message-container").insertAdjacentHTML('afterend', bericht);
 }
- //creates a listener for when you press a key
+
+
+let input = document.querySelector(".message__input");
+input.addEventListener("keyup", e => {
+    if (e.keyCode === 13) {
+        // on enter
+        let text = input.value;
+        fetch("http://localhost:3000/controllers/api/v1/message", {
+                method: "post",
+                'headers': {
+                    'Content-Type': 'application/json',
+                  //  'Authorization': 'Bearer ' + localStorage.getItem('token')
+                },
+                body: JSON.stringify({
+                    "text": text
+                })
+            })
+            .then(result => {
+                return result.json();
+            }).then(json => {
+                input.value = "";
+                input.focus();
+
+                primus.write({
+                    "action": "addTodo",
+                    "data": json
+                });
+
+                //appendTodo(json);
+
+            }).catch(err => {
+                console.log(err)
+            })
+    }
+
+    e.preventDefault();
+});
+
+/* //creates a listener for when you press a key
 window.onkeyup = keyup;
 
 //creates a global Javascript variable
@@ -58,7 +96,7 @@ function keyup(e) {
   messageElement.innerText = message
   messageContainer.append(messageElement)
   }
-}
+}*/
 
  
  

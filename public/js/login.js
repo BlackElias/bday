@@ -16,7 +16,7 @@ var btnSignup = document.getElementById("btn-login").addEventListener("click", f
           if (json.status === "success"){  
          let token = json.data.token;
          localStorage.setItem("token", token);
-         window.location.href = "https://cors-anywhere.herokuapp.com/http://localhost:3000/home.html";// app pagina 
+         window.location.href = "http://localhost:3000/home.html";// app pagina 
           } else {
             let feedback = document.querySelector(".alert"); 
             feedback.textContent = "login failed"; 
