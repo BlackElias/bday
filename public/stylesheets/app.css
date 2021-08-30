@@ -61,7 +61,13 @@
 .input-login:hover {
   background-color: rgba(80, 80, 80, 0.151);
 }
-
+.input__send-container {
+  position: fixed;
+  padding-bottom: 30px;
+  bottom: 0;
+  background-color: white;
+  max-width: 1200px;
+}
 .latest__transactions li {
   font-family: "Roboto", cursive;
   font-size: 20px;
