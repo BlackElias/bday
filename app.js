@@ -11,7 +11,7 @@ const apiChat = require('./routes/api/v1/chat');
 
 const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb://localhost:27017/bday',
+mongoose.connect('mongodb+srv://elias:server123@bdayelias.1qjia.mongodb.net/test',
 {useNewUrlParser: true, useUnifiedTopology: true});
 const passport =require('./passport/passport');
 mongoose.set('useCreateIndex', true);

@@ -83,7 +83,7 @@ function keyup(e) {
      e.preventDefault()
      const message = messageInput.value
      appendMessage(`You: ${message}`)
-     socket.emit('send-chat-message', message)
+    
      messageInput.value = ''
      
      const messageElement = document.createElement('div')

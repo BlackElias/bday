@@ -159,6 +159,14 @@ width: 25%;
 #leaderboard{
     background:$yellow;
 }
+.input__send-container{ 
+    position: fixed;
+  padding-bottom: 30px;
+  bottom: 0;
+  background-color: white;
+  max-width: 1200px;
+
+}
 
 @media  screen and (max-width: 415px) {
    .center{
@@ -183,6 +191,14 @@ width: 25%;
   .logo-position{
         margin-top: 60%;
     } 
+    .input__send-container{ 
+        position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+    
+    }
    
 }
 
@@ -214,6 +230,14 @@ width: 25%;
 
     .logo-position{
         margin-top: 20%;
+    }
+    .input__send-container{ 
+        position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+    
     }
 
 }
